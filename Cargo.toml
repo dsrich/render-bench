@@ -9,7 +9,7 @@ edition = "2021"
 tracy = ["tracy-client", "profiling/profile-with-tracy"]
 
 [dependencies]
-#   Rendering-related
+#   Rendering-related, 0.10 does not have atty feature
 env_logger = { version = "0.9", default-features = false, features = ["termcolor", "atty"] }
 # Everything after 0.20.5 causes compile errors
 glam = {version = "0.20", features = ["bytemuck"]}
